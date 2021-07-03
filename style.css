@@ -1,0 +1,88 @@
+body{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(99, 0, 0, .5);
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 40px;
+  margin-left: 1.85%;
+}
+img {
+  max-width: 100%;
+}
+
+
+.row1, .row2 {
+  /*
+  Флекс-контейнер
+  */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  .row1, .row2 {
+    flex-wrap: nowrap;
+  }
+}
+
+.project-image {
+  /*
+  Картинка проекта
+  70% при + ширине
+  100% при ?????− ширине
+  */
+  box-sizing: border-box;
+}
+.project-caption {
+  /*
+  Описание проекта
+  30% от всей ширины
+  100% при ?????− ширине
+  */
+  box-sizing: border-box;
+
+}
+
+
+@media screen and (min-width:500px) {
+  body {
+    background-color: rgba(0, 99, 0, .5);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.project-image {
+  /*
+  Картинка проекта
+  70% при + ширине
+  100% при ?????− ширине
+  */
+  
+  padding: 0 2% 0 0;
+  flex-grow: 7;
+  box-sizing: border-box;
+}
+.project-caption {
+  /*
+  Описание проекта
+  30% от всей ширины
+  100% при ?????− ширине
+  */
+  
+  padding: 0 2% 0 0;
+  flex-grow: 3;
+  box-sizing: border-box;
+
+}
+
+.row2 .project-image {order: 2;}
+.row2 .project-caption {order: 1;}  
+}
+
+
+
